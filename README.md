@@ -49,7 +49,7 @@ Carrete de alambre utilizado para la práctica.
 ### Detalle del cálculo:
 Imagen 4: Detalle del cálculo realizado. 
 
-![Calc](https://github.com/user-attachments/assets/0ae18976-aeed-4889-b62c-7f78f729e8ee)
+![Calc](https://github.com/user-attachments/assets/6a39840f-fe30-4a87-92d7-b88b51f81f3c)
 
 
 ---
