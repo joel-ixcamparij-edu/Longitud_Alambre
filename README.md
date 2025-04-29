@@ -26,25 +26,8 @@ La página permite al usuario ingresar los datos y visualizar el resultado junto
 
 ### Detalle del cálculo:
 
-1. **Conversión de diámetro a metros:**
-   \[
-   0.8\ \text{mm} = 8.000000 × 10^{-4}\ \text{m}
-   \]
+![Calc](https://github.com/user-attachments/assets/0ae18976-aeed-4889-b62c-7f78f729e8ee)
 
-2. **Cálculo del radio:**
-   \[
-   \text{radio} = 4.000000 × 10^{-4}\ \text{m}
-   \]
-
-3. **Área de sección transversal:**
-   \[
-   A = π × (4.000000 × 10^{-4})^2 = 5.026548 × 10^{-7}\ \text{m}^2
-   \]
-
-4. **Volumen del alambre:**
-   \[
-   V = \frac{1\ \text{kg}}{7850\ \text{kg/m}^3} = 1.273885 × 10^{-4}\ \text{m}^3
-   \]
 
 5. **Longitud del alambre:**
    \[
