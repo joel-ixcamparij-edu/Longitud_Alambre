@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Longitud de Alambre</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    input, button { margin: 5px 0; padding: 8px; width: 100%; max-width: 300px; }
+    .resultado { margin-top: 20px; font-weight: bold; }
+    .detalle { margin-top: 10px; background: #f9f9f9; padding: 10px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+
+  <h1>Calculadora de Longitud de Alambre</h1>
+
+  <p>Esta herramienta calcula la longitud aproximada de un alambre a partir de su peso, densidad y diámetro.</p>
+
+  <h2>Fórmulas utilizadas:</h2>
+  <ul>
+    <li>Área de sección transversal: <strong>A = &pi; × (radio)^2</strong></li>
+    <li>Volumen: <strong>V = masa / densidad</strong></li>
+    <li>Longitud: <strong>L = Volumen / Área</strong></li>
+  </ul>
+
+  <h2>Ingrese los datos:</h2>
+
+  <label for="peso">Peso (kg):</label><br>
+  <input type="number" id="peso" step="any"><br>
+
+  <label for="densidad">Densidad (kg/m³):</label><br>
+  <input type="number" id="densidad" step="any"><br>
+
+  <label for="diametro">Diámetro (mm):</label><br>
+  <input type="number" id="diametro" step="any"><br>
+
+  <button onclick="calcularLongitud()">Calcular Longitud</button>
+
+  <div class="resultado" id="resultado"></div>
+  <div class="detalle" id="detalle"></div>
+
+  <script>
+    function formatearNumero(numero) {
+      if (numero < 0.001) {
+        var partes = numero.toExponential(6).split('e');
+        var base = parseFloat(partes[0]).toFixed(6);
+        var exponente = parseInt(partes[1]);
+        return base + " × 10^" + exponente;
+      } else {
+        return numero.toFixed(6);
+      }
+    }
+
+    function calcularLongitud() {
+      var peso = parseFloat(document.getElementById('peso').value);
+      var densidad = parseFloat(document.getElementById('densidad').value);
+      var diametro_mm = parseFloat(document.getElementById('diametro').value);
+
+      if (isNaN(peso) || isNaN(densidad) || isNaN(diametro_mm) || peso <= 0 || densidad <= 0 || diametro_mm <= 0) {
+        document.getElementById('resultado').innerHTML = "Por favor, ingrese valores válidos en todos los campos.";
+        document.getElementById('detalle').innerHTML = "";
+        return;
+      }
+
+      var diametro_m = diametro_mm / 1000; // Convertir mm a metros
+      var radio = diametro_m / 2;
+      var area = Math.PI * Math.pow(radio, 2);
+      var volumen = peso / densidad;
+      var longitud = volumen / area;
+
+      document.getElementById('resultado').innerHTML = "La longitud aproximada del alambre es: " + longitud.toFixed(2) + " metros.";
+
+      var detalle = "<h3>Detalle del cálculo:</h3>";
+      detalle += "<p>1. Conversión de diámetro a metros: " + diametro_mm + " mm = " + formatearNumero(diametro_m) + " m</p>";
+      detalle += "<p>2. Cálculo del radio: radio = " + formatearNumero(radio) + " m</p>";
+      detalle += "<p>3. Área de sección transversal: A = π × (" + formatearNumero(radio) + ")² = " + formatearNumero(area) + " m²</p>";
+      detalle += "<p>4. Volumen del alambre: V = masa / densidad = " + peso + " kg / " + densidad + " kg/m³ = " + formatearNumero(volumen) + " m³</p>";
+      detalle += "<p>5. Longitud: L = Volumen / Área = " + formatearNumero(volumen) + " m³ / " + formatearNumero(area) + " m² = " + longitud.toFixed(2) + " metros</p>";
+
+      document.getElementById('detalle').innerHTML = detalle;
+    }
+  </script>
+
+</body>
+</html>
