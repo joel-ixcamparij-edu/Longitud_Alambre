@@ -20,19 +20,36 @@ La página permite al usuario ingresar los datos y visualizar el resultado junto
 - **Diámetro:** 0.8 mm
 
 
+Imagen 1:
+
+Pesaje con el carrete de alambre en mano (217.6 libras).
+
+![ConAlambre](https://github.com/user-attachments/assets/00f3c89a-853b-4e93-a94d-408121b0b107)
+
+Imagen 2:
+
+Pesaje sin el carrete de alambre (215.4 libras).
+
+![SinAlambre](https://github.com/user-attachments/assets/5f8d889d-ffbe-4553-a68d-05bade0e0b0d)
+
+Descripción general:
+
+La diferencia de peso confirma que el carrete tiene un peso aproximado de 2.2 libras (1 kg), consistente con la ficha técnica.
+
+Imagen 3:
+Carrete de alambre utilizado para la práctica.
+![Alambre](https://github.com/user-attachments/assets/dc553235-3401-4ab1-9020-7a2eb0638d7f)
+
+
 ### Resultado
 
 - **Longitud aproximada del alambre:** 253.43 metros
 
 ### Detalle del cálculo:
+Imagen 4: Detalle del cálculo realizado. 
 
 ![Calc](https://github.com/user-attachments/assets/0ae18976-aeed-4889-b62c-7f78f729e8ee)
 
-
-5. **Longitud del alambre:**
-   \[
-   L = \frac{V}{A} = \frac{1.273885 × 10^{-4}\ \text{m}^3}{5.026548 × 10^{-7}\ \text{m}^2} = 253.43\ \text{metros}
-   \]
 
 ---
 
