@@ -55,9 +55,9 @@ La página permite al usuario ingresar los datos y visualizar el resultado junto
 
 ## Tecnologías usadas
 
-- HTML5
-- JavaScript (puro, sin librerías externas)
-- CSS básico
+- HTML
+- JavaScript 
+- CSS 
 
 Todo el código está contenido en un solo archivo HTML que puede ejecutarse localmente o ser alojado en plataformas como GitHub Pages.
 
