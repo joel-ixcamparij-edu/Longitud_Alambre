@@ -59,8 +59,6 @@ Imagen 4: Detalle del cálculo realizado.
 - JavaScript 
 - CSS 
 
-Todo el código está contenido en un solo archivo HTML que puede ejecutarse localmente o ser alojado en plataformas como GitHub Pages.
-
 ---
 
 ## Propósito académico
