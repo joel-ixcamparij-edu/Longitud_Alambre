@@ -23,14 +23,15 @@ La página permite al usuario ingresar los datos y visualizar el resultado junto
 Imagen 1:
 
 Pesaje con el carrete de alambre en mano (217.6 libras).
+![ConAlambre](https://github.com/user-attachments/assets/7731d655-5d82-4541-9a00-e0a9c8ce4f26)
 
-![ConAlambre](https://github.com/user-attachments/assets/00f3c89a-853b-4e93-a94d-408121b0b107)
 
 Imagen 2:
 
 Pesaje sin el carrete de alambre (215.4 libras).
 
-![SinAlambre](https://github.com/user-attachments/assets/5f8d889d-ffbe-4553-a68d-05bade0e0b0d)
+![SinAlambre](https://github.com/user-attachments/assets/83b87b8c-e339-4962-96ee-b5fd3eb94eee)
+
 
 Descripción general:
 
