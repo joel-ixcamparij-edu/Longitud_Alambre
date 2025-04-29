@@ -5,8 +5,6 @@ Accede a la calculadora aquí:
 
 ---
 
-# Calculadora de Longitud de Alambre
-
 Este proyecto consiste en una herramienta web simple para calcular la longitud aproximada de un alambre a partir de su peso, densidad (material) y diámetro.
 
 La página permite al usuario ingresar los datos y visualizar el resultado junto con el detalle paso por paso del proceso de cálculo.
